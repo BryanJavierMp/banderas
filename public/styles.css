@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.simulador {
+    background-color: white;
+    padding: 25px;
+    width: 500px; /* Ancho reducido */
+    height: 600px; /* Altura más grande */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border-left: 3px solid black;
+    border-top: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-monto {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    color: gray;
+    text-align: center;
+}
+
+.input-monto:focus {
+    outline: none;
+    border-bottom: 2px solid #66ccff;
+}
+
+.descripcion {
+    text-align: left;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.plazo {
+    margin-bottom: 20px;
+}
+
+.botones-plazo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.plazo-btn {
+    width: 48%;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.plazo-btn:hover {
+    background-color: #f1f1f1;
+}
+
+.opciones {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.opcion-btn {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    flex: 1;
+    display: inline-block;
+    width: calc(25% - 10px);
+}
+
+.opcion-btn:hover {
+    background-color: #f1f1f1;
+}
+
+.opcion-btn.selected {
+    border-color: #66ccff;
+}
+
+.icono-lapiz {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.invertir-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: yellow;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.invertir-btn:hover {
+    background-color: #f1c40f;
+}
+
+.respuestas {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.selected {
+    border-color: #66ccff;
+    background-color: #f0f8ff;
+}
+
+.mensaje-plazo {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+    text-align: left; /* Mensaje alineado a la izquierda */
+}
+
+/* Aseguramos que el contenedor sea flexible y permita que el botón esté abajo */
+.simulador {
+    background-color: white;
+    padding: 25px;
+    width: 500px;
+    height: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border-left: 3px solid black;
+    border-top: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.boton-container {
+    margin-top: auto; /* Empuja el botón hacia el fondo */
+}
